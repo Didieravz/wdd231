@@ -1,0 +1,114 @@
+/*Estilos generales*/
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #34495e;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navegación */
+.navBar {
+  background-color: #3498db;
+}
+
+.navBar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.navBar ul.show {
+  display: block;
+}
+
+.navBar li {
+  padding: 10px;
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Secciones */
+main section {
+  padding: 20px;
+}
+
+section h2 {
+  color: white;
+  background-color: #0d4985;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Imagen de la sección del país */
+.country-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .navBar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navBar li {
+    padding: 0;
+  }
+
+  .navBar a {
+    padding: 10px;
+  }
+}
