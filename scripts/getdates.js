@@ -20,3 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener para el botón del menú
   menuToggle.addEventListener("click", toggleMenu);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+
+    link.addEventListener("mouseenter", function () {
+      this.style.color = "#f39c12";
+    });
+
+    link.addEventListener("mouseleave", function () {
+      this.style.color = "";
+    });
+  });
+});

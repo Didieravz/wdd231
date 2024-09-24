@@ -94,17 +94,31 @@ function filtrarCursos(subject) {
   }
 }
 
-// Función para calcular el total de créditos
+// Función para calcular el total de créditos del certificado
 function calculateTotalCredits() {
-  const totalCredits = courses.reduce(
-    (total, course) => total + course.credits,
-    0
-  );
-  const creditDisplay = document.getElementById("total-creditos");
-  creditDisplay.textContent = `Total Credits: ${totalCredits}`;
+  return courses.reduce((total, course) => total + course.credits, 0);
 }
 
-// Agregar event listeners a los botones de filtro
+// Función para calcular los créditos completados
+function calculateCompletedCredits() {
+  return courses.reduce(
+    (total, course) => (course.completed ? total + course.credits : total),
+    0
+  );
+}
+
+// Función para mostrar los créditos
+function displayCredits() {
+  const completedCredits = calculateCompletedCredits();
+  const totalCredits = calculateTotalCredits();
+  const creditDisplay = document.getElementById("total-creditos");
+  creditDisplay.innerHTML = `
+    <p>Credits completed: ${completedCredits}</p>
+    <p>Total number of credits for this certificate: ${totalCredits}</p>
+  `;
+}
+
+// Modificar el evento DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
   const allButton = document.querySelector(".all-courses");
   const cseButton = document.querySelector(".cse-courses");
@@ -117,6 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mostrar todos los cursos inicialmente
   mostrarCursos(courses);
 
-  // Calcular y mostrar el total de créditos
-  calculateTotalCredits();
+  // Calcular y mostrar los créditos
+  displayCredits();
 });

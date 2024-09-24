@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Didier A. Virguez" />
-    <meta
-      name="description"
-      content="WDD 231 - Web Frontend Development - Didier Alexander Virguez Zapata."
-    />
-    <title>WDD 231 - Web Frontend Development - Didier A. Virguez</title>
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/cursos.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/cursos.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="header">
-        <img src="images/myPicture.jpg" alt="myPicture" />
-        <h1>Didier A. Virguez</h1>
-      </div>
-      <nav class="navBar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Didier A. Virguez" />
+  <meta name="description" content="WDD 231 - Web Frontend Development - Didier Alexander Virguez Zapata." />
+  <title>WDD 231 - Web Frontend Development - Didier A. Virguez</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/cursos.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap"
+    rel="stylesheet" />
+  <script defer src="scripts/getdates.js"></script>
+  <script defer src="scripts/cursos.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="images/myPicture.jpg" alt="myPicture" />
+      <h1>Didier A. Virguez</h1>
+    </div>
+    <nav class="navBar">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link" data-page="home"> Home</a>
+        </li>
+        <li>
+          <a href="#FinalProject" class="nav-link" data-page="chamber">
+            Chamber</a>
+        </li>
+        <li>
+          <a href="https://github.com/Didieravz" class="nav-link" data-page="github">
+            GitHub Profile</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/didiervirguez/?trk=public-profile-join-page" class="nav-link"
+            data-page="linkedin">
+            LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <section class="course-section">
+        <h2>Course Work</h2>
         <ul>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="#FinalProject"> Chamber</a></li>
-          <li><a href="https://github.com/Didieravz"> GitHub Profile</a></li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/didiervirguez/?trk=public-profile-join-page"
-            >
-              LinkedIn</a
-            >
-          </li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
-      </nav>
-    </header>
+      </section>
 
-    <main>
-      <div class="main-content">
-        <section class="course-section">
-          <h2>Course Work</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
+      <section class="country-section">
+        <h2>Muzo, Colombia</h2>
+        <img src="images/muzoPDVT.webp" alt="MuzoCity" />
+      </section>
+    </div>
 
-        <section class="country-section">
-          <h2>Muzo, Colombia</h2>
-          <img src="images/muzoPDVT.webp" alt="MuzoCity" />
-        </section>
-      </div>
+    <div class="secundary-section">
+      <section class="certificate">
+        <h2>Web And Computer Programming Certificate</h2>
+        <div class="filter-buttons">
+          <button class="all-courses">All</button>
+          <button class="cse-courses">CSE</button>
+          <button class="wdd-courses">WDD</button>
+        </div>
+        <ul></ul>
+        <p id="total-creditos"></p>
+      </section>
+    </div>
+  </main>
 
-      <div class="secundary-section">
-        <section class="certificate">
-          <h2>Web And Computer Programming Certificate</h2>
-          <div class="filter-buttons">
-            <button class="all-courses">All</button>
-            <button class="cse-courses">CSE</button>
-            <button class="wdd-courses">WDD</button>
-          </div>
-          <ul></ul>
-          <p id="total-creditos"></p>
-        </section>
-      </div>
-    </main>
+  <footer>
+    <p>
+      &copy; <span id="current-year"></span> Didier Alexander Virguez -
+      Colombia
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
 
-    <footer>
-      <p>
-        &copy; <span id="current-year"></span> Didier Alexander Virguez -
-        Colombia
-      </p>
-      <p id="lastModified"></p>
-    </footer>
-  </body>
 </html>

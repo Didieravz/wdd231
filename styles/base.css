@@ -64,6 +64,31 @@ body {
   text-decoration: none;
 }
 
+.navBar .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navBar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navBar .nav-link:hover::after,
+.navBar .nav-link.active::after {
+  width: 100%;
+}
+
+.navBar .nav-link.active {
+  font-weight: bold;
+}
+
 /* Secciones */
 main section {
   padding: 20px;
