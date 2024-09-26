@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+header {
+  text-align: center;
+  color: #0e076c;
+  margin-bottom: 30px;
+}
+
+#cards {
+  display: grid;
+  gap: 20px;
+}
+
+/* Estilos para las tarjetas */
+section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+p {
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #0e076c;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  #cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  #cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
