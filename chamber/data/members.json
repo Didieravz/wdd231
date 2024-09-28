@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Esmeraldas Mining Services",
+      "address": "Calle 1 #2-3, Muzo, Boyacá",
+      "phone": "+57 321 456 7890",
+      "website": "https://muzocolombia.co/companias-muzo-colombia/",
+      "image": "images/talladoBruto.jpg",
+      "membershipLevel": 3,
+      "description": "Premium emerald jewelry and raw gemstones"
+    },
+    {
+      "name": "Green Mountain Tours",
+      "address": "Carrera 4 #5-6, Muzo, Boyacá",
+      "phone": "+57 322 567 8901",
+      "website": "https://greenmountaintours.com",
+      "image": "images/MuzoFuraTena.jpg",
+      "membershipLevel": 2,
+      "description": "Eco-friendly tours of the emerald region"
+    },
+    {
+      "name": "Muzo Miners Association",
+      "address": "Avenida 7 #8-9, Muzo, Boyacá",
+      "phone": "+57 323 678 9012",
+      "website": "https://muzominers.org",
+      "image": "images/ProcesoLavado.jpg",
+      "membershipLevel": 3,
+      "description": "Supporting local miners and their families"
+    },
+    {
+      "name": "Esmeralda Cacao",
+      "address": "Calle 10 #11-12, Muzo, Boyacá",
+      "phone": "+57 324 789 0123",
+      "website": "https://muzocolombia.co/furatena-cacao/",
+      "image": "images/furatenaCacao.png",
+      "membershipLevel": 1,
+      "description": "Local coffee shop with emerald-inspired drinks"
+    },
+    {
+      "name": "Gem Tech Solutions",
+      "address": "Carrera 13 #14-15, Muzo, Boyacá",
+      "phone": "+57 325 890 1234",
+      "website": "https://gemtechsolutions.com",
+      "image": "images/MuzoParqueGuaqueros.jpg",
+      "membershipLevel": 2,
+      "description": "Technology services for the gemstone industry"
+    },
+    {
+      "name": "Verde Hotel",
+      "address": "Avenida 16 #17-18, Muzo, Boyacá",
+      "phone": "+57 326 901 2345",
+      "website": "https://hotelandplace.com/es/hoteles/muzo",
+      "image": "images/hotelMuzo.jpg",
+      "membershipLevel": 3,
+      "description": "Luxury accommodation with emerald-themed rooms"
+    },
+    {
+      "name": "Muzo Artisans Collective",
+      "address": "Calle 19 #20-21, Muzo, Boyacá",
+      "phone": "+57 327 012 3456",
+      "website": "https://muzoartisans.org",
+      "image": "images/talladoBruto.jpg",
+      "membershipLevel": 1,
+      "description": "Promoting local crafts and artisanal products"
+    }
+  ]
