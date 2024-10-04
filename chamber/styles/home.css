@@ -78,7 +78,7 @@ main {
     letter-spacing: 1px;
 }
 .cta-section p {
-    color: #666;
+    color: #1c1c1c;
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto 30px;
@@ -88,7 +88,7 @@ main {
 .cta-button {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #007bff;
+    background-color: #08305b;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -252,17 +252,17 @@ main {
 
 .spotlight h3 {
     margin: 0 0 10px;
-    color: #007bff;
+    color: #062c54;
 }
 
 .spotlight p {
     margin: 5px 0;
     font-size: 0.9rem;
-    color: #666;
+    color: black;
 }
 
 .spotlight a {
-    color: #007bff;
+    color: #043d79;
     text-decoration: none;
     font-weight: bold;
 }
@@ -274,5 +274,5 @@ main {
 .spotlight .membership-level {
     margin-top: 10px;
     font-weight: bold;
-    color: #28a745;
+    color: #0b611f;
 }

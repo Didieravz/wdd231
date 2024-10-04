@@ -130,5 +130,5 @@ async function displaySpotlights() {
     });
 }
 
-// Ejecutar la función cuando se carga la página
+// Ejecuta la función cuando se carga la página
 window.addEventListener('load', displaySpotlights);
