@@ -1,0 +1,278 @@
+/* Estilos generales para el main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Estilos para la sección Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 40%;
+}
+
+.hero-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: .5;
+}
+
+/* Estilos para la sección Call to Action */
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 10px 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    opacity: 0.1;
+    z-index: 0;
+}
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cta-section p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para las secciones de eventos, clima y pronóstico */
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .info-cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cta-section {
+        padding: 10px 5px;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+}
+
+.card h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para cada sección */
+.events-section ul {
+    padding-left: 20px;
+}
+
+/* Estilos actualizados para la sección del clima */
+.weather-section, .weather-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather-content, .forecast-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.weather-icon, .forecast-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.weather-info, .forecast-info {
+    flex-grow: 1;
+}
+
+.weather-info ul, .forecast-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.weather-info li, .forecast-info li {
+    margin-bottom: 5px;
+}
+
+/* Estilos responsivos adicionales */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .weather-content, .forecast-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .weather-icon, .forecast-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .weather-info, .forecast-info {
+        text-align: center;
+    }
+    .spotlight {
+        width: 100%;
+    }
+}
+
+/* Estilos para la sección Company Spotlights */
+.spotlights-section {
+    margin-bottom: 40px;
+}
+
+.spotlights-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spotlight {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.spotlight img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.spotlight h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.spotlight p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.spotlight a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight a:hover {
+    text-decoration: underline;
+}
+
+.spotlight .membership-level {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28a745;
+}

@@ -1,36 +1,6 @@
-// Update footer information
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
-
-const hamburgerBtn = document.querySelector("#hamburgerBtn");
-const navElement = document.querySelector(".menuLinks");
 const gridBtn = document.getElementById("gridBtn");
 const listBtn = document.getElementById("listBtn");
 const directoryContainer = document.getElementById("directoryContainer");
-
-hamburgerBtn.addEventListener("click", () => {
-  navElement.classList.toggle("open");
-  hamburgerBtn.classList.toggle("open");
-});
-
-// Cerrar el menú si se hace clic fuera de él
-document.addEventListener("click", (event) => {
-  if (
-    !hamburgerBtn.contains(event.target) &&
-    !navElement.contains(event.target)
-  ) {
-    navElement.classList.remove("open");
-    hamburgerBtn.classList.remove("open");
-  }
-});
-
-// Asegurarse de que el menú esté visible en pantallas grandes
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 768) {
-    navElement.classList.remove("open");
-    hamburgerBtn.classList.remove("open");
-  }
-});
 
 // Toggle between grid and list view
 gridBtn.addEventListener("click", () => directoryContainer.className = "grid-view");

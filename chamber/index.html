@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Didier A. Virguez" />
+    <meta name="description" content="Home of Muzo Chamber of Commerce" />
+    <meta property="og:title" content="Muzo Chamber of Commerce - Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Discover local businesses and services in Muzo, Boyacá. Explore our Home Page of chamber members, their offerings, and connect with them!">
+    <meta property="og:image" content="https://didieravz.github.io/wdd231/chamber/images/MuzoParqueGuaqueros.jpg">
+    <meta property="og:url" content="https://didieravz.github.io/wdd231/chamber/directory.html">
+    <title>Muzo Chamber of Commerce - Home</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/favicon.ico" alt="Muzo Chamber of Commerce logo" width="34" height="40" />
+            <h2>Muzo Chamber of Commerce</h2>
+            <button id="hamburgerBtn" aria-label="Boton hamburguesa"></button>
+        </div>
+        <nav class="menuLinks">
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-image" src="images/muzo_hero.webp" alt="Beautiful view of Muzo" loading="lazy" width="1200"
+                height="600">
+            <div class="hero-content">
+                <h1>Welcome to Muzo Chamber of Commerce</h1>
+                <p>Connecting businesses, fostering growth</p>
+            </div>
+        </section>
+        <!-- Call to Action to Join the Chamber -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Join the Chamber of Commerce</h2>
+                <p>Become a member and connect with local businesses. Enjoy exclusive benefits and resources that will
+                    help your business thrive in our community!</p>
+                <a href="#join-form" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+
+        <div class="info-cards">
+
+            <!-- Current events section -->
+            <section id="events" class="events-section card">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Networking Event: October 15, 2024 - Join us for networking opportunities!</li>
+                    <li>Annual Business Fair: November 5, 2024 - Showcase your business to the community.</li>
+                </ul>
+            </section>
+
+            <!-- Weather Section -->
+            <section id="weather" class="weather-section card">
+                <h2>Current Weather</h2>
+                <div class="weather-content">
+                    <img id="weather-icon" src="images/weatherFavicon.ico" alt="" class="weather-icon">
+                    <div class="weather-info">
+                        <ul>
+                            <li>City: <span id="current-city"></span></li>
+                            <li>Temperature: <span id="current-temp"></span></li>
+                            <li>Description: <span id="description"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weather forecast section-->
+            <section id="weatherForecast" class="weather-forecast card">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-content">
+                    <img id="forecast-icon" src="images/faviconForecast.ico" alt="" class="forecast-icon">
+                    <div class="forecast-info">
+                        <ul>
+                            <li>Today: <span id="today-temp"></span></li>
+                            <li>Saturday: <span id="saturday-temp"></span></li>
+                            <li>Sunday: <span id="sunday-temp"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+        <!-- Company Spotlights Section -->
+        <section id="spotlights" class="spotlights-section">
+            <h2>Company Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-container">
+                <!-- Los spotlights se insertarán aquí dinámicamente -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Muzo Chamber of Commerce</p>
+                <p>123 Main Street, Muzo, Boyacá, Colombia</p>
+                <p>Email: info@muzochamber.com</p>
+                <p>Phone: +57 123 456 7890</p>
+            </div>
+            <div class="dev-info">
+                <p>
+                    &copy; <span id="currentYear"></span> Muzo Chamber of Commerce |
+                    Didier Alexander Virguez Zapata | WDD 231 Project
+                </p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
