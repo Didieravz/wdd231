@@ -69,16 +69,19 @@ const courses = [
 
 //Funcion para mostrar los cursos
 function mostrarCursos(coursesToDisplay) {
-  const courseSection = document.querySelector(".certificate ul");
+  const courseSection = document.querySelector(".buttons");
   courseSection.innerHTML = "";
   //Se agregan los cursos al html
   coursesToDisplay.forEach((course) => {
-    const li = document.createElement("li");
-    li.className = course.completed ? "completed" : "";
-    li.innerHTML = `
+    const boton = document.createElement("button");
+    boton.className = course.completed ? "completed" : "";
+    boton.innerHTML = `
             <h3>${course.subject} ${course.number} - ${course.title}</h3> `;
 
-    courseSection.appendChild(li);
+    // Añade evento click para mostrar el modal
+    boton.addEventListener('click', () => displayModal(course));
+
+    courseSection.appendChild(boton);
   });
 }
 
@@ -134,3 +137,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // Calcular y mostrar los créditos
   displayCredits();
 });
+
+//Funcion para mostrar el modal
+function displayModal(course){
+  //recupera el modal del dom
+  const modal = document.getElementById("course-details");
+
+  modal.innerHTML = `
+    <button class="close-button">&times;</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Description:</strong> ${course.description}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Technology Stack:</strong> ${course.technology.join(', ')}</p>
+  `;
+
+  //evento que abre el modal
+  modal.showModal();
+
+  // Añadir evento para cerrar el modal con el botón
+  const closeButton = modal.querySelector('.close-button');
+  closeButton.addEventListener('click', () => {
+    modal.close();
+  });
+
+  // Añadir evento para cerrar el modal al hacer clic fuera de él
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.close();
+    }
+  });
+}
