@@ -156,13 +156,13 @@ function displayModal(course){
   //evento que abre el modal
   modal.showModal();
 
-  // Añadir evento para cerrar el modal con el botón
+  // evento para cerrar el modal con el botón X
   const closeButton = modal.querySelector('.close-button');
   closeButton.addEventListener('click', () => {
     modal.close();
   });
 
-  // Añadir evento para cerrar el modal al hacer clic fuera de él
+  // evento para cerrar el modal al hacer clic fuera de él
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.close();
