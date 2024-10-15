@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Didier A. Virguez" />
-    <meta name="description" content="Directory of Muzo Chamber of Commerce members" />
-    <meta property="og:title" content="Muzo Chamber of Commerce - Member Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="Discover local businesses and services in Muzo, Boyacá. Explore our directory of chamber members, their offerings, and connect with them!">
-    <meta property="og:image" content="https://didieravz.github.io/wdd231/chamber/images/MuzoParqueGuaqueros.jpg">
-    <meta property="og:url" content="https://didieravz.github.io/wdd231/chamber/directory.html">
-    <title>Muzo Chamber of Commerce - Directory</title>
+    <meta name="description" content="Join confirmation of Muzo Chamber of Commerce" />
+
+    <title>Muzo Chamber of Commerce - Join Confirmation</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="styles/chamber.css" />
-    <script src="scripts/chamber.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
 </head>
 
 <body>
@@ -38,15 +36,23 @@
     </header>
 
     <main>
-        <h1>Member Directory</h1>
-        <div class="view-controls">
-            <button id="gridBtn" aria-label="Boton vista grid">Grid View</button>
-            <button id="listBtn" aria-label="Boton Vista lista">List View</button>
-        </div>
-        <div id="directoryContainer" class="grid-view">
-            <!-- Member cards will be dynamically inserted here -->
-        </div>
+
+        <h1>Thank You for Joining!</h1>
+        <p>We appreciate your interest in the Muzo Chamber of Commerce. Your application has been received.</p>
+
+        <section id="form-data">
+            <h2>Submitted Information:</h2>
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Business Name:</strong> <span id="businessName"></span></p>
+            <p><strong>Membership Level:</strong> <span id="membershipLevel"></span></p>
+            <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+        </section>
+
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -66,6 +72,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

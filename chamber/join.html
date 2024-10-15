@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Didier A. Virguez" />
+    <meta name="description" content="Join of Muzo Chamber of Commerce" />
+    <meta property="og:title" content="Muzo Chamber of Commerce - Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Discover local businesses and services in Muzo, Boyacá. Explore our Join Page of chamber Commerce">
+    <meta property="og:image" content="https://didieravz.github.io/wdd231/chamber/images/muzo_hero.webp">
+    <meta property="og:url" content="https://didieravz.github.io/wdd231/chamber/join.html">
+    <title>Muzo Chamber of Commerce - Join</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/favicon.ico" alt="Muzo Chamber of Commerce logo" width="34" height="40" />
+            <h2>Muzo Chamber of Commerce</h2>
+            <button id="hamburgerBtn" aria-label="Boton hamburguesa"></button>
+        </div>
+        <nav class="menuLinks">
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main class="main">
+        <section class="form-section">
+            <h3>Membership Application Form</h3>
+
+            <form action="thankyou.html" method="get" class="form">
+                <label for="firstName">First Name:
+                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name"
+                        title="Please enter your first name">
+                </label>
+
+                <label for="lastName">Last Name:
+                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name"
+                        title="Please enter your last name">
+                </label>
+
+                <label for="title">Title:
+                    <input type="text" id="title" name="title" autocomplete="organization-title"
+                        title="Please enter your title (minimum 7 characters, only letters, hyphens, and spaces)"
+                        pattern="^[a-zA-Z\s-]{7,}$">
+                </label>
+
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required autocomplete="email"
+                        placeholder="example@domain.com" title="Please enter a valid email address">
+                </label>
+
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                        title="Please enter your mobile phone number">
+                </label>
+
+                <label for="businessName">Business/Organization Name:
+                    <input type="text" id="businessName" name="businessName" required autocomplete="organization"
+                        title="Please enter your business or organization name">
+                </label>
+
+                <label for="membershipLevel">Membership Level:
+                    <select id="membershipLevel" name="membershipLevel" required>
+                        <option value="">Select a membership level</option>
+                        <option value="NP">NP Membership (Non-profit, no fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"
+                        title="Please provide a brief description of your business or organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+
+            </form>
+        </section>
+
+        <section class="membership-levels">
+            <h3>Membership Levels</h3>
+            <div id="membershipCards" class="membership-cards">
+                <!-- Las tarjetas de membresía se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modals -->
+    <dialog id="membershipModal">
+        <h2 id="modalTitle"></h2>
+        <ul id="modalBenefits"></ul>
+        <button onclick="closeModal()">Close</button>
+    </dialog>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Muzo Chamber of Commerce</p>
+                <p>123 Main Street, Muzo, Boyacá, Colombia</p>
+                <p>Email: info@muzochamber.com</p>
+                <p>Phone: +57 123 456 7890</p>
+            </div>
+            <div class="dev-info">
+                <p>
+                    &copy; <span id="currentYear"></span> Muzo Chamber of Commerce |
+                    Didier Alexander Virguez Zapata | WDD 231 Project
+                </p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

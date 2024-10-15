@@ -1,0 +1,31 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #07670a;
+    text-align: center;
+}
+
+#form-data {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#form-data h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#form-data p {
+    margin: 10px 0;
+}
+
+#form-data strong {
+    color: #014a63;
+}

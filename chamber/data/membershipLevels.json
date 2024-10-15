@@ -1,0 +1,44 @@
+{
+    "levels": [
+      {
+        "id": "np",
+        "name": "NP Membership",
+        "description": "For non-profit organizations",
+        "benefits": [
+          "Free membership for non-profit organizations",
+          "Access to networking events",
+          "Listing in online directory"
+        ]
+      },
+      {
+        "id": "bronze",
+        "name": "Bronze Membership",
+        "description": "Entry-level benefits",
+        "benefits": [
+          "All NP benefits",
+          "Discounted event tickets",
+          "Monthly newsletter feature"
+        ]
+      },
+      {
+        "id": "silver",
+        "name": "Silver Membership",
+        "description": "Enhanced benefits",
+        "benefits": [
+          "All Bronze benefits",
+          "Advertising opportunities",
+          "Access to exclusive training sessions"
+        ]
+      },
+      {
+        "id": "gold",
+        "name": "Gold Membership",
+        "description": "Premium benefits",
+        "benefits": [
+          "All Silver benefits",
+          "Premium spotlight on home page",
+          "VIP access to all chamber events"
+        ]
+      }
+    ]
+  }

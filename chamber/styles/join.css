@@ -1,0 +1,174 @@
+ .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-section, .membership-levels {
+    margin-bottom: 30px;
+}
+
+.form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.membership-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: scale(1.05);
+}
+
+.membership-card h4 {
+    margin-top: 0;
+}
+
+.membership-card button {
+    background-color: #053646;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.membership-card button:hover {
+    background-color: #007B9A;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-section {
+        width: 60%;
+    }
+
+    .membership-levels {
+        width: 35%;
+    }
+}
+
+/* Animation for membership cards */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.membership-card {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Estilos para el modal*/
+#membershipModal {
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+#membershipModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#membershipModal h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#membershipModal ul {
+    padding-left: 20px;
+}
+
+#membershipModal button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+#membershipModal button:hover {
+    background-color: #007B9A;
+}
