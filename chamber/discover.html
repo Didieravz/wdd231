@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Didier A. Virguez" />
+    <meta name="description" content="Discover of Muzo Chamber of Commerce" />
+    <meta property="og:title" content="Muzo Chamber of Commerce - Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Discover local businesses and services in Muzo, Boyacá. Explore our Discover Page of chamber Commerce">
+    <meta property="og:image" content="https://didieravz.github.io/wdd231/chamber/images/muzo_hero.webp">
+    <meta property="og:url" content="https://didieravz.github.io/wdd231/chamber/join.html">
+    <title>Muzo Chamber of Commerce - Discover</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/favicon.ico" alt="Muzo Chamber of Commerce logo" width="34" height="40" />
+            <h2>Muzo Chamber of Commerce</h2>
+            <button id="hamburgerBtn" aria-label="Boton hamburguesa"></button>
+        </div>
+        <nav class="menuLinks">
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="discover-grid">
+
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+            <h2>Muzo demographics</h2>
+            <p>Population: 8950 (2023)</p>
+            <p>Area: 136 km²</p>
+            <p>Elevation: 850 m</p>
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Annual Business Fair: November 5, 2024 - Showcase your business to the community.</li>
+                <li>Emerald Festival - November 15-17</li>
+                <li>Networking Event: December 15, 2024 - Join us for networking opportunities!</li>
+                <li>Farmers Market - Every Saturday</li>
+                <li>Town Hall Meeting - first Saturday of each month</li>
+            </ul>
+        </aside>
+
+        <section class="image-gallery">
+            <h2>Discover Muzo</h2>
+            <div class="gallery-grid">
+
+                <figure>
+                    <img src="images/MuzoMine.jpg" alt="Muzo Emerald Mine" loading="lazy">
+                    <figcaption>The famous Muzo Emerald Mine</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/MuzoParqueGuaqueros.jpg" alt="Muzo Town Square" loading="lazy">
+                    <figcaption>Vibrant Muzo Town Square</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/MuzoFuraTena.jpg" alt="Muzo Landscape" loading="lazy">
+                    <figcaption>Breathtaking Muzo Landscape</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/talladoBruto.jpg" alt="Emerald Cutting" loading="lazy">
+                    <figcaption>Skilled Emerald Cutting Process</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/parqueDeLasEsmeraldas.jpg" alt="Muzo Local Market" loading="lazy">
+                    <figcaption>Colorful Muzo Local Market</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/muzo_hero.webp" alt="Muzo Church" loading="lazy">
+                    <figcaption>Historic Muzo Church</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Muzo Chamber of Commerce</p>
+                <p>123 Main Street, Muzo, Boyacá, Colombia</p>
+                <p>Email: info@muzochamber.com</p>
+                <p>Phone: +57 123 456 7890</p>
+            </div>
+            <div class="dev-info">
+                <p>
+                    &copy; <span id="currentYear"></span> Muzo Chamber of Commerce |
+                    Didier Alexander Virguez Zapata | WDD 231 Project
+                </p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
