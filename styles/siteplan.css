@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Main font set to Roboto */
+    background-color: #FFFFFF; /* White background */
+    color: #4B4B4B; /* Dark gray text */
+    line-height: 1.6; 
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #4B4B4B; /* Dark gray for main heading */
+    font-size: 2.5em; /* Larger font size for main heading */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4B4B4B;
+    font-size: 1.75em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #4B4B4B;
+    margin-bottom: 15px;
+}
+
+.section {
+    background-color: #f9f9f9;
+    border: 1px solid #C2B280;
+    border-radius: 5px;
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+.wireframe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wireframe {
+    background-color: #FFFFFF;
+    border: 1px solid #C2B280;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    flex: 1; /* Make wireframes flexible */
+}
+
+.wireframe:last-child {
+    margin-right: 0;
+}
+
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.wireframe p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+}
