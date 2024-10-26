@@ -1,0 +1,110 @@
+/* Variables globales */
+:root {
+    --primary-color: #4B4B4B;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --white: #fff;
+    --transition: 0.3s ease;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --font-main: 'Roboto', sans-serif;
+    --secondary-color: white;
+    --accent-color: #f4efe2;
+    --background-light: #F5F5F5;
+    --max-width: 1200px;
+    --spacing-md: 2rem;
+    --spacing-sm: 1rem;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--spacing-md);
+}
+
+.emerald {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin: var(--spacing-sm);
+    padding: var(--spacing-md);
+    width: 250px;
+    text-align: center;
+    transition: transform var(--transition);
+}
+
+.emerald:hover {
+    transform: scale(1.05);
+}
+
+.emerald img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.regular-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.discount-price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button.buy-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color var(--transition);
+}
+
+button.buy-button:hover {
+    background-color: #0f0f0f;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .emerald {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .emerald {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .regular-price,
+    .discount-price {
+        font-size: 1em;
+    }
+
+    button.buy-button {
+        width: 100%;
+    }
+}

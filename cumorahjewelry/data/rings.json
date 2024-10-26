@@ -1,0 +1,78 @@
+{
+    "womenRings": [
+        {
+            "name": "Oval Emerald Ring",
+            "reference": "1001",
+            "material": "18k Gold",
+            "regularPrice": 3500,
+            "discountPrice": 2990,
+            "image": "images/rings/anillo1.webp"
+        },
+        {
+            "name": "Rectangular Emerald Ring",
+            "reference": "1002",
+            "material": "14k Gold",
+            "regularPrice": 2400,
+            "discountPrice": 2100,
+            "image": "images/rings/anillo2Mujer.webp"
+        },
+        {
+            "name": "Round Emerald Ring",
+            "reference": "1003",
+            "material": "18k Gold",
+            "regularPrice": 2350,
+            "discountPrice": 2150,
+            "image": "images/rings/anillo3Mujer.webp"
+        },
+        {
+            "name": "Round Emerald Ring",
+            "reference": "1004",
+            "material": "18k white Gold",
+            "regularPrice": 3300,
+            "discountPrice": 3100,
+            "image": "images/rings/anillo4Mujer.webp"
+        },
+        {
+            "name": "Square Emerald Ring",
+            "reference": "1005",
+            "material": "18k White Gold",
+            "regularPrice": 2900,
+            "discountPrice": 2700,
+            "image": "images/rings/anillo5Mujer.webp"
+        },
+        {
+            "name": "Emerald plus Diamond Ring",
+            "reference": "1006",
+            "material": "18k White Gold",
+            "regularPrice": 3500,
+            "discountPrice": 3350,
+            "image": "images/rings/anillo6Mujer.webp"
+        }
+    ],
+    "menRings": [
+        {
+            "name": "Classic Ring",
+            "reference": "2001",
+            "material": "18k Gold",
+            "regularPrice": 2200,
+            "discountPrice": 1990,
+            "image": "images/rings/anillo1Hombre.webp"
+        },
+        {
+            "name": "Square Emerald Ring",
+            "reference": "2002",
+            "material": "18k White Gold",
+            "regularPrice": 2700,
+            "discountPrice": 2500,
+            "image": "images/rings/anillo2Hombre.webp"
+        },
+        {
+            "name": "Rectangular Emerald Ring",
+            "reference": "2003",
+            "material": "18k Gold",
+            "regularPrice": 2400,
+            "discountPrice": 2300,
+            "image": "images/rings/anillo3Hombre.avif"
+        }
+    ]
+}

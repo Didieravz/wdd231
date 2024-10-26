@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Didier A. Virguez" />
-    <meta name="description" content="Rings of Cumorah Jewelry" />
-    <meta property="og:title" content="Cumorah Jewelry - Rings Page">
+    <meta name="description" content="Purchase-Form of Cumorah Jewelry" />
+    <meta property="og:title" content="Cumorah Jewelry - Purchase-Form">
     <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="Discover local businesses and services in Muzo, Boyacá. Explore our Rings Page to search a beutiful ring">
+    <meta property="og:description" content="Discover local businesses and services in Muzo, Boyacá.">
     <meta property="og:image" content="https://didieravz.github.io/wdd231/chamber/images/muzo_hero.webp">
     <meta property="og:url" content="https://didieravz.github.io/wdd231/chamber/index.html">
-    <title>Cumorah Jewelry - Rings</title>
+    <title>Cumorah Jewelry - Pendants</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="styles/header-footer.css" />
-    <link rel="stylesheet" href="styles/rings.css" />
+    <link rel="stylesheet" href="styles/purchaseform.css" />
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/rings.js" defer></script>
+    <script src="scripts/purchaseform.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <div class="header-content">
             <img src="images/favicon.ico" alt="Cumorah Jewelry logo" width="34" height="40" />
@@ -39,17 +39,25 @@
         </nav>
     </header>
 
-    <main class="rings-container">
-        <h1>Our Rings Collection</h1>
+    <main>
 
-        <div class="filter-container">
-            <button id="showWomen" class="filter-btn active">Women's Rings</button>
-            <button id="showMen" class="filter-btn">Men's Rings</button>
+        <div class="purchase-form-container">
+            <h4>Formulario de Compra</h4>
+
+            <form id="purchaseForm">
+                <label for="customerName">Nombre:</label>
+                <input type="text" id="customerName" required>
+
+                <label for="customerEmail">Email:</label>
+                <input type="email" id="customerEmail" required>
+
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+
+                <button type="submit">Confirmar Compra</button>
+            </form>
         </div>
 
-        <div id="ringsGrid" class="rings-grid">
-            <!-- Los anillos se cargarán aquí dinámicamente desde el js-->
-        </div>
     </main>
 
     <footer>

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Elegant Gold Heart Pendant",
+        "reference": "3001",
+        "material": "18K Gold and Emerald",
+        "regularPrice": 300,
+        "discountPrice": 250,
+        "image": "images/pendants/dijeCorazon.webp"
+    },
+    {
+        "name": "Stylish Silver Pendant",
+        "reference": "3002",
+        "material": "Silver and Emerald",
+        "regularPrice": 80,
+        "discountPrice": 70.00,
+        "image": "images/pendants/dijeOvaloOroBlanco.webp"
+    },
+    {
+        "name": "Marquiz Gold Pendant",
+        "reference": "3003",
+        "material": "18K Gold",
+        "regularPrice": 400,
+        "discountPrice": 320,
+        "image": "images/pendants/dijeMarquiz.webp"
+    }
+]

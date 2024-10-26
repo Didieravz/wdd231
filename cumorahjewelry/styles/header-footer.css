@@ -85,15 +85,7 @@ header h2 {
     transform: scale(1.05);
 }
 
-/* Estilos para el contenido principal */
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 /* Estilos para el footer */
 footer {
@@ -101,7 +93,7 @@ footer {
     color: var(--white);
     padding: 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .footer-content {
@@ -118,14 +110,13 @@ footer {
 .dev-info {
     flex: 1;
     min-width: 250px;
-    margin: 0.5rem;
 }
 
 /* Estilos responsivos */
 @media screen and (min-width: 768px) {
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
