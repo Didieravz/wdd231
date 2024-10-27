@@ -51,7 +51,7 @@ function displayRings(rings) {
                     <span class="discount-price">Discount Price: $${ring.discountPrice.toLocaleString()}</span>
                 </div>
                 <button class="buy-button" data-name="${ring.name}" 
-                data-price="${ring.discountPrice}">Comprar</button>
+                data-price="${ring.discountPrice}">Buy Now</button>
             </div>
         `;
 

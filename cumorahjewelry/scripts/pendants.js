@@ -28,7 +28,7 @@ function displayPendants(pendants) {
             <p>Regular price: <span class="regular-price">$${pendant.regularPrice}</span> 
             <span class="discount-price">Discount price: $${pendant.discountPrice}</span></p>
             <button class="buy-button" data-name="${pendant.name}" 
-            data-price="${pendant.discountPrice}">Comprar</button>
+            data-price="${pendant.discountPrice}">Buy Now</button>
         `;
 
         // Evento para redirigir al formulario de compra
