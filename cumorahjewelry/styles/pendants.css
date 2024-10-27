@@ -46,6 +46,22 @@ h3 {
     font-size: 1.2em;
 }
 
+/*Estilos para el boton*/
+button.buy-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color var(--transition);
+}
+
+button.buy-button:hover {
+    background-color: var(--text-color);
+}
+
 /* Media Queries para Pantallas Pequeñas */
 @media (max-width: 768px) {
     .pendant {

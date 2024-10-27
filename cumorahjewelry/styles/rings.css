@@ -141,6 +141,22 @@
     font-family: var(--font-main);
 }
 
+button.buy-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color var(--transition);
+}
+
+button.buy-button:hover {
+    background-color: var(--text-color);
+}
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .rings-grid {

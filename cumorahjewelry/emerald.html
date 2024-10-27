@@ -10,8 +10,9 @@
     <meta property="og:type" content="website">
     <meta property="og:description"
         content="Discover local businesses and services in Muzo, Boyacá. Explore our Emeralds Page to know the most beautiful Colombian's emerald, focusing on the origin and beauty of these precious stones from Muzo">
-    <meta property="og:image" content="https://didieravz.github.io/wdd231/chamber/images/muzo_hero.webp">
-    <meta property="og:url" content="https://didieravz.github.io/wdd231/chamber/index.html">
+    <meta property="og:image"
+        content="https://didieravz.github.io/wdd231/cumorahjewelry/images/brutoTallacuadrada.webp">
+    <meta property="og:url" content="https://didieravz.github.io/wdd231/cumorahjewelry/emerald.html">
     <title>Cumorah Jewelry - Emeralds</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
@@ -47,6 +48,7 @@
                 <p>Size: 0.50 ct</p>
                 <p>Origin: Muzo, Boyacá</p>
                 <p>Price: <span class="regular-price">$150.00</span> <span class="discount-price">$120.00</span></p>
+                <button class="details-button">More Details</button>
                 <button class="buy-button">Buy Now</button>
             </div>
 
@@ -57,6 +59,7 @@
                 <p>Size: 0.48 ct</p>
                 <p>Origin: Muzo, Boyacá</p>
                 <p>Price: <span class="regular-price">$130.00</span> <span class="discount-price">$100.00</span></p>
+                <button class="details-button">More Details</button>
                 <button class="buy-button">Buy Now</button>
             </div>
 
@@ -67,6 +70,7 @@
                 <p>Size: 3 ct </p>
                 <p>Origin: Maripi, Boyacá</p>
                 <p>Price: <span class="regular-price">$1800.00</span> <span class="discount-price">$1700.00</span></p>
+                <button class="details-button">More Details</button>
                 <button class="buy-button">Buy Now</button>
             </div>
 
@@ -77,9 +81,38 @@
                 <p>Size: 2 ct</p>
                 <p>Origin: Muzo, Boyacá</p>
                 <p>Price: <span class="regular-price">$710.00</span> <span class="discount-price">$590.00</span></p>
+                <button class="details-button">More Details</button>
                 <button class="buy-button">Buy Now</button>
             </div>
         </section>
+
+        <dialog id="emeraldDialog" class="emerald-dialog">
+
+            <div class="dialog-details">
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <strong>Clarity</strong>
+                        <span id="dialogClarity"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Certificate</strong>
+                        <span id="dialogCertificate"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Origin</strong>
+                        <span id="dialogOrigin"></span>
+                    </div>
+                </div>
+
+                <div class="description-section">
+                    <h3>Description</h3>
+                    <p id="dialogDescription"></p>
+                </div>
+            </div>
+
+            <button class="close-dialog" aria-label="Close dialog">×</button>
+        </dialog>
+
     </main>
 
 
@@ -87,7 +120,6 @@
         <div class="footer-content">
             <div class="contact-info">
                 <h3>Contact Us</h3>
-                <p>Cumorah Jewelry</p>
                 <p>calle 22 #2-29, Muzo, Boyacá, Colombia</p>
                 <p>Email: info@CumorahJewelry.com</p>
                 <p>Phone: +57 310 8445521</p>

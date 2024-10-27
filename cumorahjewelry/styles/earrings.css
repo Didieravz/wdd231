@@ -77,7 +77,7 @@ button.buy-button:hover {
     background-color: var(--text-color);
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries para responsividad */
 @media (max-width: 768px) {
     .earring {
         width: 90%;

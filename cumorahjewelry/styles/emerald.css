@@ -7,10 +7,6 @@
     --transition: 0.3s ease;
     --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --font-main: 'Roboto', sans-serif;
-    --secondary-color: white;
-    --accent-color: #f4efe2;
-    --background-light: #F5F5F5;
-    --max-width: 1200px;
     --spacing-md: 2rem;
     --spacing-sm: 1rem;
 }
@@ -87,6 +83,45 @@ button.buy-button:hover {
     .emerald {
         width: 90%;
     }
+
+    .emerald-dialog {
+        max-width: 90%;
+        /* Asegúrate de que el modal no sea demasiado ancho */
+        width: auto;
+        /* Permite que el modal ajuste su tamaño automáticamente */
+        padding: var(--spacing-sm);
+        /* Reduce el padding para pantallas pequeñas */
+        border-radius: 8px;
+        /* Esquinas más suaves */
+    }
+
+    .dialog-details {
+        padding: 0;
+        /* Elimina el padding superior para que se ajuste mejor */
+    }
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna en pantallas pequeñas */
+    }
+
+    .description-section h3 {
+        font-size: 1.2em;
+        /* Ajusta el tamaño de la fuente para títulos */
+    }
+
+    .description-section p {
+        font-size: 0.9em;
+        /* Reduce el tamaño del texto para descripciones */
+    }
+
+    .close-dialog {
+        font-size: 1.5rem;
+        /* Ajusta el tamaño del botón de cerrar */
+        padding: 0.5rem;
+        /* Aumenta el área de clic */
+    }
 }
 
 @media (max-width: 480px) {
@@ -107,4 +142,115 @@ button.buy-button:hover {
     button.buy-button {
         width: 100%;
     }
+
+    .emerald-dialog {
+        max-width: 100%;
+        /* Asegura que el modal ocupe el 100% del ancho en pantallas pequeñas */
+        padding: var(--spacing-xs, 0.5rem);
+        /* Reduce el padding para pantallas pequeñas */
+    }
+
+    .dialog-details {
+        gap: var(--spacing-sm);
+        /* Espaciado uniforme entre detalles */
+    }
+
+    .detail-item {
+        text-align: left;
+        /* Alinea el texto a la izquierda para mayor legibilidad */
+    }
+
+}
+
+/*Estilos adicionales para el modal*/
+/* Estilos para el botón More Details */
+.details-button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: all var(--transition);
+}
+
+.details-button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Estilos para el dialog */
+.emerald-dialog {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-md);
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.emerald-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Grid de detalles */
+.dialog-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.detail-item strong {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Sección de descripción */
+.description-section h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.description-section p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Botón de cerrar */
+.close-dialog {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    line-height: 1;
+    transition: color var(--transition);
+}
+
+.close-dialog:hover {
+    color: #0f0f0f;
 }
